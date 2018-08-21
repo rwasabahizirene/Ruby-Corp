@@ -83,6 +83,16 @@ header a:hover{
   font-weight: bold;
 }
 
+header nav label {
+    margin: 0 20px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+  }
+#toggle{
+  display: none;
+}
+
 /* Showcase */
 
 #showcase{
@@ -204,8 +214,6 @@ footer{
 
 @media(max-width:768px) {
   header #branding,
-  header nav,
-  header nav li,
   #newsLetter h1,
   #newsLetter form,
   #boxes .box,
@@ -214,6 +222,38 @@ footer{
     float: none;
     text-align: center;
     width: 100%;
+  }
+
+  header nav label{
+    display: block;
+    float: right;
+    color: #e8391d;
+    font-size: 30px;
+    margin: 0;
+
+  }
+
+  header nav{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header #links{
+    display: none;
+  }
+
+  header nav li{
+    display: block;
+    float: none;
+    text-align: center;
+    width: 80%;
+    border-bottom: 1px solid #e8391d;
+    margin: 0;
+  }
+
+  #toggle:checked + #links{
+    display: block;
   }
 
   header{
@@ -237,4 +277,6 @@ footer{
     width: 100%;
     margin-bottom: 5px;
   }
+
+
 }
